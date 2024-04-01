@@ -2,3 +2,6 @@
 
 ruff
 pyinstaller
+pytest
+flake8
+pytest-cov
