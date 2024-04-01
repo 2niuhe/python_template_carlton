@@ -54,3 +54,17 @@ clean:
 	@echo " > Cleaning release file"
 	@-rm ./dist/* 2> /dev/null
 
+## piptar: Pip build a tar package
+piptar: clean
+	@echo " > Pip building..."
+	@python -m build
+
+## pipedit: Pip install in edit mode
+pipedit:
+	@echo " > Pip Install in edit mode"
+	@pip install -e .
+
+## pypitest: Upload package to testpypi
+pypitest: piptar
+	@echo "Uploading to testpypi"
+	@python -m twine upload --repository testpypi dist/*
