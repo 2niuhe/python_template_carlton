@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  model-test:
+  make-build:
     runs-on: self-hosted
     steps:
       - name: Checkout code
