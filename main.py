@@ -1,5 +1,7 @@
 import sys
+
 from src.carlton_template.mod import add_three
+
 
 def main():
     if len(sys.argv) < 2:
@@ -16,5 +18,6 @@ def main():
 
     print("结果:", result)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

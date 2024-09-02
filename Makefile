@@ -39,7 +39,7 @@ unittest:
 	@echo " > Testing..."
 	@python -m pytest --cov=./
 
-## flake8: Run flake8 
+## flake8: Run flake8
 flake8:
 	@echo " > Running flake8 check"
 	@flake8 . --count --exit-zero --max-complexity=8 --max-line-length=80 --statistic

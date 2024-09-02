@@ -1,5 +1,6 @@
-from .mod import add_three
 import unittest
+
+from .mod import add_three
 
 
 class TestAddThree(unittest.TestCase):
