@@ -24,6 +24,11 @@ ruff:
 	@echo " > Checking pep8"
 	@ruff check .
 
+## mypy: run mypy check
+mypy:
+	@echo " > Checking types"
+	@mypy
+
 ## rufffix: Fix pep8
 rufffix:
 	@echo " > Fixing pep8"
@@ -52,7 +57,7 @@ build: clean
 ## clean: Clean release file
 clean:
 	@echo " > Cleaning release file"
-	@-rm ./dist/* 2> /dev/null
+	@rm ./dist/* 2> /dev/null
 
 ## piptar: Pip build a tar package
 piptar: clean

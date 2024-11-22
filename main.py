@@ -1,6 +1,6 @@
 import sys
 
-from src.carlton_template.mod import add_three
+from carlton_template.fib import fib
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
         print("无法将输入转换为数字")
         return
 
-    result = add_three(num)
+    result = fib(num)
 
     print("结果:", result)
 
